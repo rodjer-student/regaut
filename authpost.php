@@ -29,7 +29,7 @@ require_once "connect.php";	// Подключаем контроллер для 
 											else{
 												foreach(authUser($login) as $user){
 													echo '<span style="font-size:1.25em;">Hello, </span>'.'<span style="font-size:1.25em;color:yellow">'.$user->name.'</span><br/>';
-													if(isset($_COOKIE['cookie_login']) && isset($_COOKIE['cookie_password'])){
+													if(isset($_COOKIE['cookie_login'])){
 														echo "<br/>You remebered as ".$_COOKIE['cookie_login'];
 														echo "<br/><a style='color:white' href='logout.php'>Logout</a>";
 													}

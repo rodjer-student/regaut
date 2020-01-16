@@ -8,7 +8,7 @@
 		<p>
 		<?php
 			session_start();
-			if(isset($_COOKIE['cookie_login']) && isset($_COOKIE['cookie_password'])){
+			if(isset($_COOKIE['cookie_login'])){
 				echo "You logged as ".$_COOKIE['cookie_login'];
 			}
 			else echo "You entered as unknown user";

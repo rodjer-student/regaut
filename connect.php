@@ -97,9 +97,7 @@
 		$_SESSION["login"] = $login; // Записываем Логин в сессию
 		if($_REQUEST['remember']){ // и в куки при отметке в чекбоксе формы аутентификации
 			setcookie('cookie_login', $login, strtotime('+10 days'), '/');
-			setcookie('cookie_password', $password, strtotime('+10 days'), '/');
 			$_COOKIE['cookie_login'] = $login;
-			$_COOKIE['cookie_password'] = $password;
 		}
 		if (empty($check_pass)){
 		$check_result = false; 
